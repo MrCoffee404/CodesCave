@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Codes Cave</title>
+<link rel='icon' type='image/png' href='images/favicon.ico'>
+<link rel='stylesheet' href='index/index.css'>
+<link rel='stylesheet' href='index/bundle.css'>
+<meta content="Codes Cave" property="og:title" />
+<meta content="if ur here, ur cool :sunglasses" property="og:description" />
+<script defer src='index/bundle.js'></script>
+
+<script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "Codes Cave";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = "   |-"+msg+"-|";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
+
+</head>
+<body>
+</body>
+</html>

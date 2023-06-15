@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+body {
+	background: #363636;
+	font-family: 'Gugi', cursive;
+}
+
+.back {
+	background-color: #171717;
+}
+
+.text-center {
+	color: #fff;
+	font-size: 30px;
+}
+
+.pill {
+	color: red;
+}
+
+.topicos {
+	color: #08B235;
+}
+
+.titulo {
+	color: #279143;
+}
+
+.titulo2 {
+	font-size: 25px;
+}
+
+.titulo3 {
+	font-size: 20px;
+}
+
+.form-back {
+	color: #999;
+}
+
+.btn-primary {
+	background-color: #279143;
+	border-color: #279143;
+	transition: 0.3s;
+}
+
+.btn-primary:hover {
+	background-color: #08B235;
+	border-color: #08B235;
+	box-shadow: none;
+}
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #ffffff;
+	transition: 0.3s;
+	outline: none;
+}
+
+.nav-pills a.nav-link:hover,
+.nav-pills a.nav-link:focus,
+.nav-pills a.nav-link:active {
+	background-color: #279143;
+	outline: none;
+}
+
+.img-circle img {
+	height: 300px;
+	width: 300px;
+	padding-right: 15px;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+	.text-center {
+		font-size: 24px;
+	}
+
+	.titulo2 {
+		font-size: 20px;
+	}
+
+	.titulo3 {
+		font-size: 16px;
+	}
+
+	.img-circle img {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+@media (max-width: 576px) {
+	.text-center {
+		font-size: 20px;
+	}
+
+	.titulo2 {
+		font-size: 16px;
+	}
+
+	.titulo3 {
+		font-size: 14px;
+	}
+
+	.img-circle img {
+		height: 150px;
+		width: 150px;
+	}
+}
